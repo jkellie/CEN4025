@@ -1,3 +1,9 @@
+/*
+Author Name: Jason Kellie
+Date: 08/23/2021
+Assignment Number: 01
+*/
+
 import java.io.File;
 
 public class Main {
@@ -6,7 +12,7 @@ public class Main {
 		File folder = new File((folderpath));
 
 		if (folder.exists() && folder.isDirectory()) {
-			File array[] = folder.listFiles();
+			File[] array = folder.listFiles();
 			System.out.println("Files from this folder: " + folder);
 			treePrint(array, 0, 0);
 		}
